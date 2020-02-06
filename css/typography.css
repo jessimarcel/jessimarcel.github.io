@@ -1,0 +1,32 @@
+h1{
+	font-family: 'Segoe UI', Sans-serif;
+	font-size : 50px;
+	text-align : center;
+	text-transform: uppercase;
+}
+
+h2{
+	font-family:'Calibri', Sans-serif;
+	font-size : 13px;
+	text-align : center;
+	text-transform: uppercase;
+}
+
+h3{
+	font-family: 'Calibri', Sans-serif;
+	text-align : center;
+	text-transform :uppercase;
+}
+
+p{
+	font-family: sans-serif;
+	font-size: 13px;
+	text-align : center;
+	padding-bottom:10px;
+}
+
+card.wide h2{
+	text-align:center;
+	text-align : center;
+	font-size: 40px;
+}
