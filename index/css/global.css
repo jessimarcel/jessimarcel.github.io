@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+  z-index: 10;
+}
+
+main {
+  width: 1024px;
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+nav main {
+  padding-top: 0px;
+}
+
+
+nav main a {
+  text-decoration: none;
+  color: seashell;
+  font-family: 'Raleway', sans-serif;
+  font-size:30px;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+nav main a:hover {
+  text-decoration: underline;
+  color: pink;
+}
+
+
+nav .class
+ {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: snow;
+  border-radius: 15px;
+}
+
+section.fly{
+  width:20%;
+  height :100px;
+  margin-left: 1%;
+  margin-right : 1%;
+  margin-bottom: 10px;
+  margin-top : 10px;
+  float: left;
+  background-color: black;
+  
+}
+section{
+  width:100%;
+  height: 100vh;
+  position:relative;
+}
+
+section.full{
+  background-image: url('../image/bg.jpg');
+  background-size : cover;
+  background-position: top left;
+  background-repeat:no-repeat;
+}
+
+section.a{
+  background-image: url('../image/yey.jpg');
+  background-size : 500px;
+  background-position: center;
+  background-repeat:no-repeat;
+  padding-top:80px;
+  float:right;
+}
+
+section.b{
+  background-image: url('../image/yey2.jpg');
+  background-size : 500px;
+  background-position: center;
+  background-repeat:no-repeat;
+  padding-top:80px;
+  float:left;
+}
+
+section .left {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+section .right {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+section .fly {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 40%;
+  height: 200px;
+  /*background-color: pink;*/
+}
+/**/
+
+h1 {
+  font-size: 100px;
+  font-family: 'futura', sans-serif;
+  color: papayawhip;
+   padding-top : 200px;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: 'Futura', sans-serif;
+  color:lightblue;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: 'futura', sans-serif;
+  color:white;
+}
+
+.end{
+  padding-top: 10px;
+  font-size: 25px;
+  font-family: 'Futura light', sans-serif;
+}
+
+h4 {
+  font-family: 'futura semi-bold', sans-serif;
+  padding-top :30px;
+  font-size:50px;
+  color: papayawhip;
+}
+
+p {
+  font-family: 'futura light', sans-serif;
+  font-size: 40px;
+  color : white;
+}
+
+
+@media (max-width: 1024px) {
+  main {
+    width: 100vw;
+  }
+  
+  section .left, section .right {
+    width: 100%;
+    height: 50vh;
+  }
+  
+  section .fly {
+    top: 80%;
+    left: 10%;
+    width: 90%;
+  }
+}
