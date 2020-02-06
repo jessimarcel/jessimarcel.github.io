@@ -80,7 +80,7 @@ section.full{
 
 section.a{
   background-image: url('../image/yey.jpg');
-  background-size : 500px;
+  background-size : 100px;
   background-position: center;
   background-repeat:no-repeat;
   padding-top:80px;
@@ -89,7 +89,7 @@ section.a{
 
 section.b{
   background-image: url('../image/yey2.jpg');
-  background-size : 500px;
+  background-size : 100px;
   background-position: center;
   background-repeat:no-repeat;
   padding-top:80px;
@@ -121,20 +121,20 @@ section .fly {
 /**/
 
 h1 {
-  font-size: 100px;
+  font-size: 50px;
   font-family: 'futura', sans-serif;
   color: papayawhip;
    padding-top : 200px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Futura', sans-serif;
   color:lightblue;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'futura', sans-serif;
   color:white;
 }
@@ -148,13 +148,13 @@ h3 {
 h4 {
   font-family: 'futura semi-bold', sans-serif;
   padding-top :30px;
-  font-size:50px;
+  font-size:20px;
   color: papayawhip;
 }
 
 p {
   font-family: 'futura light', sans-serif;
-  font-size: 40px;
+  font-size: 20px;
   color : white;
 }
 
