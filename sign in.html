@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Beasts</title>
+  <link rel="stylesheet" href="./css/style-form.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/hamburgers.css">
+
+  <script src="./js/carousel.js" defer></script>
+  <script src="./js/nav.js" defer></script>
+</head>
+
+<body>
+
+  <div class="nav-open" id="nav-open">
+    <h1>Magical Beasts</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Latest</a></li>
+      <li><a href="beasts.html">Beasts</a></li>
+      <li><a href="shop.html">Merchant</a></li>
+    </ul>
+  </div>
+  <br>
+
+  <nav>
+    <button class="hamburger hamburger--emphatic" id="nav-open-btn">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span><br>
+    </button>
+    <button class="btn"><a href="form.html">Register</a></button>
+  </nav>
+
+  <div class="wrapper" id="wrapper">
+    <section class="about" id="about">
+      <div class="center">
+        <img src="./assets/02.png" alt="magical beasts">
+      </div>
+
+
+<form action="action_page.php" style="border:4vw solid black">
+  <div class="form-container">
+    <h1>MAGICAL BEAST</h1>
+    <p>Sign in to your account</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+
+    <p>read our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="form-clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign In</button>
+    </div>
+  </div>
+</form>
+
+</div>
+  <footer>
+    <p><a href="home.html">www.Magiques-MagicalBeast.com</a></p>
+  </footer>
+
+</body>
+
+</html>

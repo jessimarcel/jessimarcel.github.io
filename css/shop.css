@@ -1,0 +1,85 @@
+.shop-flash {
+  padding: 0px 20px;
+}
+.shop-flash button {
+  margin-bottom: 10px;
+}
+.shop-flash__title {
+  text-align: center;
+  margin: 20px 0px;
+  margin-top: 40px;
+}
+.shop-flash__subtitle {
+  font-size: 2em;
+  text-align: center;
+}
+.shop-flash__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  max-width: 1040px;
+  margin: 50px auto;
+  margin-bottom: 200px;
+  gap: 30px 20px;
+}
+.shop-flash__list__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.shop-flash__list__item__image {
+  flex-basis: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fed500;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.shop-flash__list__item__image img {
+  width: 100%;
+}
+.shop-flash__list__item__content {
+  flex-basis: 100%;
+}
+.shop-flash__list__item__content > * {
+  margin: 20px 0px;
+}
+
+.special h1 {
+  text-align: center;
+  margin: 50px 0px;
+}
+.special__list {
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0px auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.special__list div {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 50px;
+}
+.special__list div img {
+  height: 400px;
+  width: 100%;
+}
+.special__list div p {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0px;
+}
+.special__list div button {
+  font-size: 0.8em;
+  display: block;
+  margin: 10px auto;
+}

@@ -1,0 +1,120 @@
+section {
+  margin-bottom: 0 !important;
+}
+
+.wrapper {
+  padding-bottom: 0;
+}
+
+.beast {
+  margin: 30px auto;
+}
+.beast > * {
+  width: 100%;
+  margin: 20px 0px;
+}
+.beast h1 {
+  text-align: center;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.beast__image {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0px auto;
+  height: 800px;
+}
+.beast__image div {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 700ms ease-out;
+}
+.beast__image div img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.beast__image div img:last-child {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.beast__image:hover div {
+  transform: rotateY(180deg);
+}
+.beast__characteristics {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 750px;
+  margin: 0px auto;
+}
+.beast__characteristics > div {
+  margin: 20px;
+  padding: 20px 30px;
+  background-color: #fed500;
+  color: black;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2), -5px -5px 5px rgba(0, 0, 0, 0.2) inset;
+}
+.beast__characteristics > div p {
+  margin-bottom: 15px;
+}
+.beast__desc {
+  background-color: black;
+  padding: 25px 40px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.beast__desc p {
+  max-width: 750px;
+  margin: 25px auto;
+}
+.beast__facts {
+  background-color: #fed500;
+  margin-top: 0;
+  padding: 25px 40px;
+  margin-bottom: 0;
+}
+.beast__facts h1,
+.beast__facts p {
+  max-width: 750px;
+  margin: 25px auto;
+}
+.beast__facts h1 {
+  color: white;
+  text-transform: uppercase;
+}
+.beast__facts p {
+  color: black;
+  text-align: center;
+}
+.beast__actions {
+  background-color: black;
+  margin: 0;
+}
+.beast__actions div {
+  max-width: 750px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beast__actions div button {
+  flex: 1;
+  border: none;
+  background-color: black;
+  height: 80px;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  transition: background-color 300ms ease-out;
+}
+.beast__actions div button:hover {
+  background-color: #323232;
+}

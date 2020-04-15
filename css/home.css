@@ -1,0 +1,292 @@
+section {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 3px auto;
+}
+
+.about img {
+  width: 35vmax;
+  margin-bottom: 30px;
+}
+
+.about .center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
+}
+
+.about p {
+  text-align: right;
+  font-size: 1.2em;
+  max-width: 350px;
+  margin-bottom: 25px;
+}
+
+.about .flex-column-end {
+  height: 60vh;
+  justify-content: center;
+}
+
+.upcoming {
+  height: 70vh;
+}
+.upcoming h1 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.upcoming .slider-container {
+  margin: 0px auto;
+}
+.upcoming .slider-container .icon {
+  font-size: 5em;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.upcoming .slider-container .angle-left {
+  left: 20px;
+}
+.upcoming .slider-container .angle-right {
+  right: 20px;
+}
+.upcoming .slider-container .slider {
+  width: calc(3 * 250px);
+  height: 633px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+.upcoming .slider-container .slider__images-container {
+  width: calc(6 * 250px);
+  display: flex;
+  justify-content: space-evenly;
+  transition: left 300ms ease-out;
+}
+.upcoming .slider-container .slider__images-container div {
+  transition: transform 300ms ease-out;
+  transition-delay: 150ms;
+}
+.upcoming .slider-container .slider__images-container div .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(100, 100, 100, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 0px;
+}
+.upcoming .slider-container .slider__images-container div .details p.title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.upcoming .slider-container .slider__images-container div .details p {
+  text-align: center;
+}
+.upcoming .slider-container .slider__images-container img {
+  width: 250px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8), 7px 7px 15px rgba(0, 0, 0, 0.5);
+}
+.upcoming .slider-container .slider__images-container div.is-active {
+  transform: scale(1.2) translateY(50%);
+  z-index: 9;
+}
+.upcoming .slider-container .slider__images-container div:hover .details {
+  opacity: 1;
+}
+
+.message .two-columns {
+  height: 60vh;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message .two-columns h1 {
+  text-align: center;
+}
+.message .medal {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+.message .medal img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1.2);
+  width: 400px;
+}
+.message .medal p {
+  max-width: 300px;
+  font-size: 1.2em;
+}
+.message .medal .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.message .medal .left p {
+  text-align: right;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.message .medal .right {
+  align-self: flex-end;
+}
+.message .medal .right p {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.flash-sale .headline {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flash-sale .headline h1 {
+  text-align: center;
+}
+.flash-sale .items {
+  height: 600px;
+  max-width: 800px;
+  margin: 0px auto;
+  margin-top: 50px;
+}
+.flash-sale .items .item {
+  display: flex;
+  position: absolute;
+}
+.flash-sale .items .item .details {
+  margin: 60px 30px;
+}
+.flash-sale .items .first-item {
+  left: 0;
+}
+.flash-sale .items .second-item {
+  right: 0;
+  bottom: 0;
+  flex-direction: row-reverse;
+}
+.flash-sale .items .second-item .details {
+  align-self: flex-end;
+}
+.flash-sale .items .item-image {
+  width: 300px;
+  height: 400px;
+  background-color: #fed500;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flash-sale .items .item-image img {
+  width: 100%;
+}
+
+@media (max-width: 785px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .two-columns {
+    display: block !important;
+  }
+  .two-columns::after {
+    display: none;
+  }
+
+  .about .flex-column-end {
+    align-items: center;
+  }
+  .about .flex-column-end p {
+    text-align: center;
+  }
+  .about img {
+    width: 300px;
+  }
+
+  section {
+    min-height: max-content;
+  }
+
+  .upcoming {
+    height: auto !important;
+    margin: 40px 0px;
+  }
+
+  .slider {
+    width: 100% !important;
+    overflow: initial !important;
+    overflow-x: hidden !important;
+    padding-top: 100%;
+    height: auto !important;
+  }
+  .slider__images-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 3 * 6) !important;
+  }
+  .slider__images-container img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .icon {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .message {
+    margin: 150px 0px;
+  }
+  .message .two-columns {
+    height: auto !important;
+  }
+  .message .two-columns div {
+    padding: 0;
+  }
+  .message .medal {
+    padding: 0px 20px;
+    flex-direction: column;
+    height: auto !important;
+  }
+  .message .medal .left,
+.message .medal .right {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .message .medal .left p,
+.message .medal .right p {
+    text-align: center;
+  }
+  .message .medal .right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .message .medal .right p {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .message .medal img {
+    display: block;
+    margin: 0px auto;
+    position: relative !important;
+    width: 75% !important;
+    transform: scale(1.2) !important;
+    left: initial !important;
+    top: 75px;
+    max-width: 300px;
+  }
+}
